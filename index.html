@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="header-todo">
+
+      <div class="date">
+        <span class="tdDay" id="day"></span>
+        <span class="tdMonth" id="month"></span>
+        <span class="tdYear" id="year"></span>
+      </div>
+      <h2 class="day" id="currentDay"></h2>
+
+
+    </div>
+
+    <ul class="todoList" id="task-list">
+
+    </ul>
+
+    <div class="footer-list">
+      <div class="inputField">
+        <input type="text" id="input-task" placeholder="Добавить заметку...">
+      </div>
+      <button onclick="addTask()" class="add-task"><i class="fas fa-plus"></i></button>
+    </div>
+    
+  </div>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
